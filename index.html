@@ -26,16 +26,48 @@
                 <li class="mr-10"><a href="#" class="text-[16px] font-normal">About</a></li>
                 <li class="mr-10"><a href="#" class="text-[16px] font-normal">Features</a></li>
                 <li class="mr-10"><a href="#" class="text-[16px] font-normal">Pricing</a></li>
-                <li class=" "><a href="#" class="text-[16px] font-normal py-3 px-5 bg-[#4F4CE5] rounded-full">Get
-                        Started</a></li>
+                <li class=" ">
+                    <a href="#" class="text-[16px] font-normal py-3 px-5 bg-[#4F4CE5] rounded-full">Get
+                        Started
+                    </a>
+                </li>
             </ul>
             <div class="flex justify-center gap-10 sm:hidden max-[425px]:absolute max-[425px]:left-0 items-center">
                 <li class="list-none max-[425px]:hidden"><a href="#"
                         class="text-[16px] font-normal py-3 px-5 bg-[#4F4CE5] rounded-full">Get Started</a></li>
-                <span class="material-symbols-outlined text-[#4F4CE5]">menu</span>
+                <span class="material-symbols-outlined text-[#4F4CE5]" id="toggleMenu">menu</span>
             </div>
         </section>
     </header>
+
+    <section class="wrapper hidden sm:hidden" id="toggleSection">
+        <div class="bg-[#ab44bd] h-52 absolute w-[100%] p-10 rounded-xl ">
+            <ul class="text-white flex flex-col justify-center items-center gap-3">
+                <li class="hover:bg-white w-[100%] rounded-lg hover:text-black px-5 py-2">
+                    <p>hello</p>
+                </li>
+                <li class="hover:bg-white w-[100%] rounded-lg hover:text-black px-5 py-2">
+                    <p>hello</p>
+                </li>
+                <li class="hover:bg-white w-[100%] rounded-lg hover:text-black px-5 py-2">
+                    <p>hello</p>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="py-10 bg-[url('images/home-bg.png')] bg-no-repeat bg-cover">
+        <section class="wrapper">
+            <h1 class=" text-center text-[40px] min-[400px]:text-[48px] min-[500px]:text-[56px]  sm:text-[66px] md:text-[72px] lg:text-[80px] font-semibold bg-gradient-to-r from-[#4E4BE4] to-[#E862FE] text-transparent bg-clip-text">AI startup tool</h1>
+            <h3 class="text-[20px] sm:text-[32px] md:text-[48px] font-medium text-center mb-5">Your Personal AI-Powered Branding Expert</h3>
+            <p class="text-center mb-10 font-semibold text-[#FF3BFF] text-[24px]">ELEVATE EVERY ASPECT</p>
+            <div class="flex justify-center items-center">
+                <img src="images/home-image.png" alt="image" class="w-[50%]">
+            </div>
+        </section>
+    </section>
+    
 
     <section class="py-20 max-sm:py-5">
         <section class="wrapper">
@@ -97,7 +129,8 @@
                     <h3 class="text-[38px] mb-3 font-semibold">Title Copy Goes Here <br> Be Awesome</h3>
                     <p class="text-[14px] font-normal text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Soluta, neque! Error totam et quasi, soluta eveniet, iusto maxime mollitia consequatur,
-                        impedit quos facilis perspiciatis harum!</p>
+                        impedit quos facilis perspiciatis harum!
+                    </p>
                 </div>
             </div>
         </section>
@@ -119,11 +152,22 @@
                     <p class="text-[16px] text-start mb-32  text-gray-200">Regularly publish throught pieces and engage with your audience</p>
                     <a href="#" class="text-[14px] font-semibold py-3 px-5 bg-[#4E4BE4] rounded-full">CHOOSE THIS MODE</a>
                 </div>
-            </d iv>
+            </div>
 
         </section>
     </section>
 
+   <script>
+    // Get references to the menu button and toggle section
+    let menuBtn = document.getElementById("toggleMenu");
+    let toggleSection = document.getElementById("toggleSection");
+
+    // Add click event listener to the menu button
+    menuBtn.addEventListener("click", () => {
+        // Toggle the 'hidden' class on toggleSection
+        toggleSection.classList.toggle("hidden");
+    });
+</script>
 </body>
 
 </html>
